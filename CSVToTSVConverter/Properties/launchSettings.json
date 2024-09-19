@@ -2,7 +2,7 @@
   "profiles": {
     "CSVToTSVConverter": {
       "commandName": "Project",
-      "commandLineArgs": "\"D:\\Learn\\Docker\\Input\\currency.csv\" \"D:\\Learn\\Docker\\Output\\currency.tsv\" x 14"
+      "commandLineArgs": "\"D:\\Learn\\DotNetDocker\\Input\\currency.csv\" \"D:\\Learn\\DotNetDocker\\Output\\currency.tsv\""
     }
   }
 }

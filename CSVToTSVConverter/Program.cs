@@ -29,12 +29,11 @@ namespace CSVToTSVConverter
                             // Removing Header Row and adding it to headerRow
                             headerRecord = listOfRecords.First();
                             IEnumerable<string> listOfRecordsToConvert = listOfRecords.Skip(1);
-
                             // Since direction is optional argument, if it is not provided, we will just go forward with all records
-                            if (char.TryParse(args[2], out direction))
+                            if (args.Count() > 2 && char.TryParse(args[2], out direction))
                             {
                                 var directionText = (direction == 'x') ? "First" : "Last";
-                                if (int.TryParse(args[3], out noOfLines))
+                                if (args.Count() > 3 && int.TryParse(args[3], out noOfLines))
                                 {
                                     if (noOfLines <= listOfRecordsToConvert.Count())
                                     {
