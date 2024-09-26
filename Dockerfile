@@ -23,5 +23,4 @@ FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
 ENTRYPOINT ["dotnet", "CSVToTSVConverter.dll"]
-# CMD ["/app/data/currency.csv","/app/data/curreny.tsv"]
 
