@@ -26,6 +26,9 @@
                     // Removing Header Row and adding it to headerRow
                     headerRecord = listOfRecords.First();
                     IEnumerable<string> listOfRecordsToConvert = listOfRecords.Skip(1);
+
+                    Console.WriteLine("Total No. of rows " + listOfRecordsToConvert?.Count());
+
                     var directionText = (direction == 'y') ? "Last" : "First";
                     if (noOfLines > 0)
                     {
