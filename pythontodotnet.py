@@ -21,7 +21,6 @@ arguments = [inputPath,outputPath,direction,noOfLines]
 
 # Build the command by combining the app path and the arguments
 command = [dotnet_runtime, dotnet_app_path] + arguments
-
 # Call the .NET app using subprocess
 try:
     result = subprocess.run(command, capture_output=True, text=True)

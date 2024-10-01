@@ -10,6 +10,8 @@ class Program
         // Path to your Python script
         string scriptPath = "/home/amukundan/Documents/CSVToTSVConverter/pythontodotnet.py"; // Replace with actual path to your Python script
 
+        Console.WriteLine(args.ToList());
+
         var inputPath = args[1];
         var outputPath = args[2];
         var direction = args[3];
