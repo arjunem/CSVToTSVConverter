@@ -4,23 +4,23 @@ import sys
 print ('argument list', sys.argv)
 name = sys.argv[1]
 
-print ("Hello {}. How are you?".format(name))
-
 # # Define the shell script path and arguments
 inputPath = sys.argv[1]
 outputPath = sys.argv[2]
 direction = sys.argv[3]
 noOfLines = sys.argv[4]
 
+dotnet_runtime = "dotnet"
+
 # Define the path to the .NET console app
-dotnet_app_path = "/home/amukundan/Documents/Deployed/Input/CSVToTSVConverter.exe"
+dotnet_app_path = "/home/amukundan/Documents/Deployed/CSVToTSVConverter.dll"
 
 # Define the arguments to pass to the .NET app
 arguments = [inputPath,outputPath,direction,noOfLines]
 
 
 # Build the command by combining the app path and the arguments
-command = [dotnet_app_path] + arguments
+command = [dotnet_runtime, dotnet_app_path] + arguments
 
 # Call the .NET app using subprocess
 try:
