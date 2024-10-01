@@ -36,8 +36,6 @@ namespace CSVToTSVConverter
             {
                 Console.WriteLine("No Arguments available");
             }
-
-            Console.ReadLine();
         }
     }
 }
