@@ -1,5 +1,5 @@
 #!/bin/bash
-cd CSVToTSVConverter
+cd /home/amukundan/Documents/Deployed
 
 Input_Path=$1
 Output_Path=$2
@@ -9,7 +9,7 @@ NoOfLines=$4
 echo The input path given is $Input_Path
 echo The output path given is $Output_Path
 
-dotnet run $Input_Path $Output_Path $Direction $NoOfLines
+dotnet CSVToTSVConverter.dll  $Input_Path $Output_Path $Direction $NoOfLines
 
-cd ..
+cd -
 
