@@ -363,3 +363,5 @@ MigrationBackup/
 FodyWeavers.xsd
 Output/
 CSVToTSVConverter/Output/
+.venv/
+Output/currency.tsv
