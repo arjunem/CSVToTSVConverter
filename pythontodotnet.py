@@ -2,8 +2,6 @@ import subprocess
 import sys
 
 print ('argument list', sys.argv)
-name = sys.argv[1]
-
 # # Define the shell script path and arguments
 inputPath = sys.argv[1]
 outputPath = sys.argv[2]
