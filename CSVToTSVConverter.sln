@@ -5,7 +5,18 @@ VisualStudioVersion = 17.5.002.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSVToTSVConverter", "CSVToTSVConverter\CSVToTSVConverter.csproj", "{3B85D02A-BFF7-4D47-9E1B-3ADAD5D76FB8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSVToTSVConverter.Test", "CSVToTSVCOnverter.Test\CSVToTSVConverter.Test.csproj", "{B4CE9281-D8B7-4E86-8BCE-7BC126871E40}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSVToTSVConverter.Test", "CSVToTSVCOnverter.Test\CSVToTSVConverter.Test.csproj", "{B4CE9281-D8B7-4E86-8BCE-7BC126871E40}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotnetToPython", "DotnetToPython\DotnetToPython.csproj", "{A2BA9A46-24C1-4BFA-A1E4-8D6C673D3DC3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F23245DD-4CDB-4BC6-A8F2-2A1FD04803D3}"
+	ProjectSection(SolutionItems) = preProject
+		bashtopython.sh = bashtopython.sh
+		csvtotsvpython.py = csvtotsvpython.py
+		csvtotsvshell.sh = csvtotsvshell.sh
+		Dockerfile = Dockerfile
+		pythontodotnet.py = pythontodotnet.py
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +32,10 @@ Global
 		{B4CE9281-D8B7-4E86-8BCE-7BC126871E40}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B4CE9281-D8B7-4E86-8BCE-7BC126871E40}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B4CE9281-D8B7-4E86-8BCE-7BC126871E40}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2BA9A46-24C1-4BFA-A1E4-8D6C673D3DC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2BA9A46-24C1-4BFA-A1E4-8D6C673D3DC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2BA9A46-24C1-4BFA-A1E4-8D6C673D3DC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2BA9A46-24C1-4BFA-A1E4-8D6C673D3DC3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
