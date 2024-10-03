@@ -11,10 +11,10 @@ class Program
 
         Console.WriteLine(Newtonsoft.Json.JsonConvert.SerializeObject(args));
 
-        var inputPath = args[1];
-        var outputPath = args[2];
-        var direction = args[3];
-        var noOfLines = args[4];
+        var inputPath = args[0];
+        var outputPath = args[1];
+        var direction = args[2];
+        var noOfLines = args[3];
 
         // Arguments to pass to the Python script (e.g., a name in this case)
         string pythonArgs = $"\"{scriptPath}\" \"{inputPath}\" \"{outputPath}\" \"{direction}\" \"{noOfLines}\"";
