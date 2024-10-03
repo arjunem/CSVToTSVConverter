@@ -17,7 +17,7 @@ class Program
         var noOfLines = args[3];
 
         // Arguments to pass to the Python script (e.g., a name in this case)
-        string pythonArgs = $"\"{scriptPath}\" \"{inputPath}\" \"{outputPath}\" \"{direction}\" \"{noOfLines}\"";
+        string pythonArgs = $"\"{inputPath}\" \"{outputPath}\" \"{direction}\" \"{noOfLines}\"";
 
         // Set up the process start information
         ProcessStartInfo start = new ProcessStartInfo
